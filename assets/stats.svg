@@ -3,38 +3,60 @@
 <desc id="desc">749 contribuições; 126 dias ativos; sequência atual de 3 dias; maior sequência de 13 dias no período.</desc>
 <style>
 text { font-family: 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace; }
-
+@keyframes cursor-blink {
+  0%, 49% { opacity: .9; } 50%, 100% { opacity: 0; }
+}
+@keyframes status-breathe {
+  0%, 100% { opacity: 1; } 50% { opacity: .4; }
+}
+.terminal-cursor { animation: cursor-blink 2s steps(1, end) infinite; }
+.status-led { animation: status-breathe 5s ease-in-out infinite; }@keyframes chart-replay {
+  0%, 100% { transform: scaleY(.12); opacity: .55; }
+  24%, 82% { transform: scaleY(1); opacity: 1; }
+}
+@keyframes metric-breathe {
+  0%, 100% { opacity: 1; } 50% { opacity: .72; }
+}
+.month {
+  transform-box: fill-box; transform-origin: center bottom;
+  animation: chart-replay 10s cubic-bezier(.4, 0, .2, 1) infinite;
+}
+.metric-value { animation: metric-breathe 6s ease-in-out infinite; }@media (prefers-reduced-motion: reduce) {
+  .terminal-cursor, .status-led, .monogram-motion, .ascii,
+  .cell, .month, .metric-value { animation: none !important; }
+}
 </style>
 
 <rect x="1" y="1" width="428" height="558" rx="10" fill="#0d1117" stroke="#30363d"/>
 <path d="M1 32H429" stroke="#30363d"/>
 <circle cx="17" cy="17" r="3.5" fill="#ff5f57"/>
 <circle cx="31" cy="17" r="3.5" fill="#febc2e"/>
-<circle cx="45" cy="17" r="3.5" fill="#28c840"/>
+<circle class="status-led" cx="45" cy="17" r="3.5" fill="#28c840"/>
 <text x="233.0" y="21" font-size="10" fill="#9da7b3" text-anchor="middle">fabiolrocha@github: ~ / stats</text>
+<rect class="terminal-cursor" x="408" y="12" width="5" height="10" rx="1" fill="#7ee787"/>
 <rect x="18.0" y="52" width="192.0" height="86" rx="6" fill="#161b22" stroke="#252c35"/>
 <text x="30.0" y="74" font-size="14" fill="#9da7b3" >sequência atual</text>
-<text x="30.0" y="108" font-size="32" fill="#7ee787" font-weight="700">3</text>
+<text x="30.0" y="108" font-size="32" fill="#7ee787" class="metric-value" font-weight="700" style="animation-delay:-0ms">3</text>
 <text x="30.0" y="126" font-size="12" fill="#9da7b3" >dias seguidos</text>
 <rect x="220.0" y="52" width="192.0" height="86" rx="6" fill="#161b22" stroke="#252c35"/>
 <text x="232.0" y="74" font-size="14" fill="#9da7b3" >maior sequência</text>
-<text x="232.0" y="108" font-size="32" fill="#e6edf3" font-weight="700">13</text>
+<text x="232.0" y="108" font-size="32" fill="#e6edf3" class="metric-value" font-weight="700" style="animation-delay:-400ms">13</text>
 <text x="232.0" y="126" font-size="12" fill="#9da7b3" >dias no período</text>
 <rect x="18.0" y="148" width="192.0" height="86" rx="6" fill="#161b22" stroke="#252c35"/>
 <text x="30.0" y="170" font-size="14" fill="#9da7b3" >contribuições</text>
-<text x="30.0" y="204" font-size="32" fill="#e6edf3" font-weight="700">749</text>
+<text x="30.0" y="204" font-size="32" fill="#e6edf3" class="metric-value" font-weight="700" style="animation-delay:-800ms">749</text>
 <text x="30.0" y="222" font-size="12" fill="#9da7b3" >últimos 365 dias</text>
 <rect x="220.0" y="148" width="192.0" height="86" rx="6" fill="#161b22" stroke="#252c35"/>
 <text x="232.0" y="170" font-size="14" fill="#9da7b3" >dias ativos</text>
-<text x="232.0" y="204" font-size="32" fill="#e6edf3" font-weight="700">126</text>
+<text x="232.0" y="204" font-size="32" fill="#e6edf3" class="metric-value" font-weight="700" style="animation-delay:-1200ms">126</text>
 <text x="232.0" y="222" font-size="12" fill="#9da7b3" >de 365 dias</text>
 <rect x="18.0" y="244" width="192.0" height="86" rx="6" fill="#161b22" stroke="#252c35"/>
 <text x="30.0" y="266" font-size="14" fill="#9da7b3" >melhor dia</text>
-<text x="30.0" y="300" font-size="32" fill="#e6edf3" font-weight="700">44</text>
+<text x="30.0" y="300" font-size="32" fill="#e6edf3" class="metric-value" font-weight="700" style="animation-delay:-1600ms">44</text>
 <text x="30.0" y="318" font-size="12" fill="#9da7b3" >07/10/2026</text>
 <rect x="220.0" y="244" width="192.0" height="86" rx="6" fill="#161b22" stroke="#252c35"/>
 <text x="232.0" y="266" font-size="14" fill="#9da7b3" >média / dia ativo</text>
-<text x="232.0" y="300" font-size="32" fill="#e6edf3" font-weight="700">5,9</text>
+<text x="232.0" y="300" font-size="32" fill="#e6edf3" class="metric-value" font-weight="700" style="animation-delay:-2000ms">5,9</text>
 <text x="232.0" y="318" font-size="12" fill="#9da7b3" >contribuições</text>
 <rect x="18" y="344" width="394" height="160" rx="6" fill="#161b22" stroke="#252c35"/>
 <text x="30" y="367" font-size="12" fill="#9da7b3" >contribuições / mês</text>

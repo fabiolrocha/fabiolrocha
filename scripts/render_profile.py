@@ -20,6 +20,52 @@ GREEN = "#7ee787"
 CELLS = ("#21262d", "#0e4429", "#006d32", "#26a641", "#7ee787")
 MONTHS = ("jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez")
 
+# Keep motion inside the SVGs: GitHub renders these as images without JavaScript.
+TERMINAL_CSS = '''@keyframes cursor-blink {
+  0%, 49% { opacity: .9; } 50%, 100% { opacity: 0; }
+}
+@keyframes status-breathe {
+  0%, 100% { opacity: 1; } 50% { opacity: .4; }
+}
+.terminal-cursor { animation: cursor-blink 2s steps(1, end) infinite; }
+.status-led { animation: status-breathe 5s ease-in-out infinite; }'''
+
+ASCII_CSS = '''@keyframes float {
+  0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); }
+}
+@keyframes ascii-wave {
+  0%, 65%, 100% { opacity: 1; } 30% { opacity: .4; }
+}
+.monogram-motion { animation: float 6s ease-in-out infinite; }
+.ascii { animation: ascii-wave 5s ease-in-out infinite; }'''
+
+STATS_CSS = '''@keyframes chart-replay {
+  0%, 100% { transform: scaleY(.12); opacity: .55; }
+  24%, 82% { transform: scaleY(1); opacity: 1; }
+}
+@keyframes metric-breathe {
+  0%, 100% { opacity: 1; } 50% { opacity: .72; }
+}
+.month {
+  transform-box: fill-box; transform-origin: center bottom;
+  animation: chart-replay 10s cubic-bezier(.4, 0, .2, 1) infinite;
+}
+.metric-value { animation: metric-breathe 6s ease-in-out infinite; }'''
+
+HEATMAP_CSS = '''@keyframes contribution-wave {
+  0%, 50%, 100% { opacity: 1; transform: scale(1); }
+  25% { opacity: .45; transform: scale(.8); }
+}
+.cell[data-active="true"] {
+  transform-box: fill-box; transform-origin: center;
+  animation: contribution-wave 7s ease-in-out infinite;
+}'''
+
+REDUCED_MOTION_CSS = '''@media (prefers-reduced-motion: reduce) {
+  .terminal-cursor, .status-led, .monogram-motion, .ascii,
+  .cell, .month, .metric-value { animation: none !important; }
+}'''
+
 
 def text(x, y, value, size=18, color=TEXT, extra=""):
     return f'<text x="{x}" y="{y}" font-size="{size}" fill="{color}" {extra}>{escape(str(value))}</text>'
@@ -109,8 +155,11 @@ def terminal(width, height, command, content):
             f'rx="10" fill="{BG}" stroke="{BORDER}"/>'
             f'<path d="M1 32H{width - 1}" stroke="{BORDER}"/>')
     for i, color in enumerate(('#ff5f57', '#febc2e', '#28c840')):
-        body += f'<circle cx="{17 + i * 14}" cy="17" r="3.5" fill="{color}"/>'
+        css_class = ' class="status-led"' if i == 2 else ''
+        body += f'<circle{css_class} cx="{17 + i * 14}" cy="17" r="3.5" fill="{color}"/>'
     body += text(width / 2 + 18, 21, command, 10, MUTED, 'text-anchor="middle"')
+    body += (f'<rect class="terminal-cursor" x="{width - 22}" y="12" '
+             f'width="5" height="10" rx="1" fill="{GREEN}"/>')
     return body + content
 
 
@@ -125,7 +174,7 @@ def monogram_body(profile, width=420, compact=False):
     columns = 54
     length = columns * size * .6
     left = (width - length) / 2
-    body = ''
+    body = '<g class="monogram-motion">'
     for row in range(8 * scale):
         line = ''
         for column in range(columns):
@@ -139,7 +188,8 @@ def monogram_body(profile, width=420, compact=False):
         body += text(left, top + row * leading, line, size,
                      GREEN if row < 9 else TEXT,
                      f'class="ascii" xml:space="preserve" textLength="{length}" '
-                     f'lengthAdjust="spacingAndGlyphs" style="animation-delay:{row * 24}ms"')
+                     f'lengthAdjust="spacingAndGlyphs" style="animation-delay:-{row * 70}ms"')
+    body += '</g>'
     name_y = 326 if compact else 430
     body += text(width / 2, name_y, profile['name'], 29, TEXT,
                  'text-anchor="middle" font-weight="700"')
@@ -151,18 +201,13 @@ def monogram_body(profile, width=420, compact=False):
     return body
 
 
-ASCII_CSS = '''@keyframes type { from { opacity: .12; } to { opacity: 1; } }
-.ascii { animation: type .7s ease-out both; }
-@media (prefers-reduced-motion: reduce) { .ascii { animation: none; } }'''
-
-
 def monogram(profile):
     body = terminal(430, 560, profile['username'] + '@github: ~ / identity',
                     monogram_body(profile, 430))
     return svg(560, 'Monograma FL — ' + profile['name'],
                'As iniciais F e L desenhadas com caracteres de terminal. ' +
                profile['headline'] + '. ' + profile['location'] + '.',
-               body, ASCII_CSS, 430, frame=False)
+               body, TERMINAL_CSS + ASCII_CSS + REDUCED_MOTION_CSS, 430, frame=False)
 
 
 def heatmap(snapshot, stats, compact=False):
@@ -194,9 +239,10 @@ def heatmap(snapshot, stats, compact=False):
                 label_positions[band] = x
             previous_month = when.month
         caption = f'{formatted_date(day["date"])}: {day["count"]} contribuições'
-        body += (f'<rect class="cell" x="{x}" y="{y}" '
+        active = 'true' if day['count'] else 'false'
+        body += (f'<rect class="cell" data-active="{active}" x="{x}" y="{y}" '
                  f'width="{9 if compact else 11}" height="11" rx="2" '
-                 f'fill="{CELLS[day["level"]]}" style="animation-delay:{index * 2}ms">'
+                 f'fill="{CELLS[day["level"]]}" style="animation-delay:-{index * 18}ms">'
                  f'<title>{caption}</title></rect>')
     legend_x, legend_y = (204, 378) if compact else (670, 193)
     body += text(28, legend_y, 'atividade no GitHub', 11, MUTED)
@@ -205,13 +251,10 @@ def heatmap(snapshot, stats, compact=False):
         body += (f'<rect x="{legend_x + i * 17}" y="{legend_y - 10}" '
                  f'width="11" height="11" rx="2" fill="{color}"/>')
     body += text(legend_x + 92, legend_y, 'mais', 11, MUTED)
-    css = '''@keyframes reveal { from { opacity: .15; } to { opacity: 1; } }
-.cell { animation: reveal .5s ease-out both; }
-@media (prefers-reduced-motion: reduce) { .cell { animation: none; } }'''
     return svg(height, 'Calendário de contribuições',
                f'{stats["total"]} contribuições entre {formatted_date(snapshot["from"])} '
                f'e {formatted_date(snapshot["to"])}. Verde mais claro indica maior atividade.',
-               body, css, width, frame=False)
+               body, HEATMAP_CSS + REDUCED_MOTION_CSS, width, frame=False)
 
 
 def stats_body(snapshot, stats, width=420):
@@ -236,7 +279,8 @@ def stats_body(snapshot, stats, width=420):
                  f'rx="6" fill="{PANEL}" stroke="#252c35"/>')
         body += text(x + 12, y + 22, label, 14, MUTED)
         body += text(x + 12, y + 56, value, 32, GREEN if index == 0 else TEXT,
-                     'font-weight="700"')
+                     f'class="metric-value" font-weight="700" '
+                     f'style="animation-delay:-{index * 400}ms"')
         body += text(x + 12, y + 74, context, 12, MUTED)
     chart_y, baseline, chart_height = 344, 478, 86
     body += (f'<rect x="{padding}" y="{chart_y}" width="{width - padding * 2}" '
@@ -272,7 +316,7 @@ def stats_card(snapshot, stats):
                f'{stats["total"]} contribuições; {stats["active"]} dias ativos; '
                f'sequência atual de {stats["current"]} dias; '
                f'maior sequência de {stats["longest"]} dias no período.',
-               body, width=430, frame=False)
+               body, TERMINAL_CSS + STATS_CSS + REDUCED_MOTION_CSS, width=430, frame=False)
 
 
 def identity(snapshot, profile, stats, compact=False):
@@ -289,7 +333,8 @@ def identity(snapshot, profile, stats, compact=False):
                f'Monograma FL em ASCII. {profile["name"]}, {profile["location"]}. '
                f'{profile["headline"]}. {stats["total"]} contribuições em 365 dias; '
                f'{stats["active"]} dias ativos; maior sequência de {stats["longest"]} dias.',
-               body, ASCII_CSS, width, frame=False)
+               body, TERMINAL_CSS + ASCII_CSS + STATS_CSS + REDUCED_MOTION_CSS,
+               width, frame=False)
 
 
 def render(snapshot, profile):

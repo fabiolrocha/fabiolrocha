@@ -59,7 +59,9 @@ Agendamentos podem atrasar, e o GitHub pode desativá-los após 60 dias sem ativ
 
 A coleta rejeita calendários incompletos, datas repetidas e totais inconsistentes. O snapshot contém somente datas, contagens e quantidade de repositórios públicos; não armazena nomes ou conteúdo de repositórios privados. O calendário reflete os dados visíveis ao token e as preferências de contribuições privadas do perfil; contagens agregadas podem variar entre uma execução local autenticada e o token do Actions.
 
-As animações de entrada do monograma e das células são breves e respeitam `prefers-reduced-motion`. As informações permanecem disponíveis quando a animação não é reproduzida.
+As animações se repetem continuamente: o monograma FL flutua com uma onda de brilho, os dias com contribuições pulsam em sequência, os terminais têm cursor piscante e as barras mensais repetem uma revelação de baixo para cima. As barras usam a mesma escala durante a animação, preservando a proporção entre os meses; os números não mudam. Dias sem contribuições permanecem estáticos. Os ciclos duram entre 2 e 10 segundos e usam apenas CSS interno dos SVGs, sem JavaScript.
+
+Todos os movimentos respeitam `prefers-reduced-motion`: com essa preferência ativa, o desenho aparece completo e estático. As informações também permanecem disponíveis quando a animação não é reproduzida.
 
 O README usa `<picture>` para escolher versões específicas para telas de até 600 pixels. No celular, o calendário anual é dividido em duas faixas, preservando os 365 dias, e o painel de estatísticas fica abaixo do monograma. As versões `*-mobile.svg` são geradas junto com as imagens de desktop.
 

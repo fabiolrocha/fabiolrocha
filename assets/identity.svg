@@ -3,49 +3,78 @@
 <desc id="desc">Monograma FL em ASCII. Fábio Luiz, Brasília, Brasil. Desenvolvimento web e projetos acadêmicos. 749 contribuições em 365 dias; 126 dias ativos; maior sequência de 13 dias.</desc>
 <style>
 text { font-family: 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace; }
-@keyframes type { from { opacity: .12; } to { opacity: 1; } }
-.ascii { animation: type .7s ease-out both; }
-@media (prefers-reduced-motion: reduce) { .ascii { animation: none; } }
+@keyframes cursor-blink {
+  0%, 49% { opacity: .9; } 50%, 100% { opacity: 0; }
+}
+@keyframes status-breathe {
+  0%, 100% { opacity: 1; } 50% { opacity: .4; }
+}
+.terminal-cursor { animation: cursor-blink 2s steps(1, end) infinite; }
+.status-led { animation: status-breathe 5s ease-in-out infinite; }@keyframes float {
+  0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); }
+}
+@keyframes ascii-wave {
+  0%, 65%, 100% { opacity: 1; } 30% { opacity: .4; }
+}
+.monogram-motion { animation: float 6s ease-in-out infinite; }
+.ascii { animation: ascii-wave 5s ease-in-out infinite; }@keyframes chart-replay {
+  0%, 100% { transform: scaleY(.12); opacity: .55; }
+  24%, 82% { transform: scaleY(1); opacity: 1; }
+}
+@keyframes metric-breathe {
+  0%, 100% { opacity: 1; } 50% { opacity: .72; }
+}
+.month {
+  transform-box: fill-box; transform-origin: center bottom;
+  animation: chart-replay 10s cubic-bezier(.4, 0, .2, 1) infinite;
+}
+.metric-value { animation: metric-breathe 6s ease-in-out infinite; }@media (prefers-reduced-motion: reduce) {
+  .terminal-cursor, .status-led, .monogram-motion, .ascii,
+  .cell, .month, .metric-value { animation: none !important; }
+}
 </style>
 
 <rect x="1" y="1" width="418" height="558" rx="10" fill="#0d1117" stroke="#30363d"/>
 <path d="M1 32H419" stroke="#30363d"/>
 <circle cx="17" cy="17" r="3.5" fill="#ff5f57"/>
 <circle cx="31" cy="17" r="3.5" fill="#febc2e"/>
-<circle cx="45" cy="17" r="3.5" fill="#28c840"/>
+<circle class="status-led" cx="45" cy="17" r="3.5" fill="#28c840"/>
 <text x="228.0" y="21" font-size="10" fill="#9da7b3" text-anchor="middle">fabiolrocha@github: ~ / identity</text>
-<text x="44.76000000000002" y="90.0" font-size="10.2" fill="#7ee787" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:0ms">0:}+/{=]1;[0:}+/{=]1;[0:      1;[0:}+/                </text>
-<text x="44.76000000000002" y="99.5" font-size="10.2" fill="#7ee787" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:24ms">]1;[0:}+/{=]1;[0:}+/{=]1      /{=]1;[0                </text>
-<text x="44.76000000000002" y="109.0" font-size="10.2" fill="#7ee787" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:48ms">+/{=]1;[0:}+/{=]1;[0:}+/      0:}+/{=]                </text>
-<text x="44.76000000000002" y="118.5" font-size="10.2" fill="#7ee787" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:72ms">[0:}+/{=]1;[0:}+/{=]1;[0      ]1;[0:}+                </text>
-<text x="44.76000000000002" y="128.0" font-size="10.2" fill="#7ee787" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:96ms">=]1;[0:}                      +/{=]1;[                </text>
-<text x="44.76000000000002" y="137.5" font-size="10.2" fill="#7ee787" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:120ms">}+/{=]1;                      [0:}+/{=                </text>
-<text x="44.76000000000002" y="147.0" font-size="10.2" fill="#7ee787" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:144ms">;[0:}+/{                      =]1;[0:}                </text>
-<text x="44.76000000000002" y="156.5" font-size="10.2" fill="#7ee787" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:168ms">{=]1;[0:                      }+/{=]1;                </text>
-<text x="44.76000000000002" y="166.0" font-size="10.2" fill="#7ee787" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:192ms">:}+/{=]1                      ;[0:}+/{                </text>
-<text x="44.76000000000002" y="175.5" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:216ms">1;[0:}+/                      {=]1;[0:                </text>
-<text x="44.76000000000002" y="185.0" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:240ms">/{=]1;[0                      :}+/{=]1                </text>
-<text x="44.76000000000002" y="194.5" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:264ms">0:}+/{=]                      1;[0:}+/                </text>
-<text x="44.76000000000002" y="204.0" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:288ms">]1;[0:}+/{=]1;[0:}+/          /{=]1;[0                </text>
-<text x="44.76000000000002" y="213.5" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:312ms">+/{=]1;[0:}+/{=]1;[0          0:}+/{=]                </text>
-<text x="44.76000000000002" y="223.0" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:336ms">[0:}+/{=]1;[0:}+/{=]          ]1;[0:}+                </text>
-<text x="44.76000000000002" y="232.5" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:360ms">=]1;[0:}+/{=]1;[0:}+          +/{=]1;[                </text>
-<text x="44.76000000000002" y="242.0" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:384ms">}+/{=]1;                      [0:}+/{=                </text>
-<text x="44.76000000000002" y="251.5" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:408ms">;[0:}+/{                      =]1;[0:}                </text>
-<text x="44.76000000000002" y="261.0" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:432ms">{=]1;[0:                      }+/{=]1;                </text>
-<text x="44.76000000000002" y="270.5" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:456ms">:}+/{=]1                      ;[0:}+/{                </text>
-<text x="44.76000000000002" y="280.0" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:480ms">1;[0:}+/                      {=]1;[0:                </text>
-<text x="44.76000000000002" y="289.5" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:504ms">/{=]1;[0                      :}+/{=]1                </text>
-<text x="44.76000000000002" y="299.0" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:528ms">0:}+/{=]                      1;[0:}+/                </text>
-<text x="44.76000000000002" y="308.5" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:552ms">]1;[0:}+                      /{=]1;[0                </text>
-<text x="44.76000000000002" y="318.0" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:576ms">+/{=]1;[                      0:}+/{=]1;[0:}+/{=]1;[0:</text>
-<text x="44.76000000000002" y="327.5" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:600ms">[0:}+/{=                      ]1;[0:}+/{=]1;[0:}+/{=]1</text>
-<text x="44.76000000000002" y="337.0" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:624ms">=]1;[0:}                      +/{=]1;[0:}+/{=]1;[0:}+/</text>
-<text x="44.76000000000002" y="346.5" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:648ms">}+/{=]1;                      [0:}+/{=]1;[0:}+/{=]1;[0</text>
-<text x="44.76000000000002" y="356.0" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:672ms">;[0:}+/{                      =]1;[0:}+/{=]1;[0:}+/{=]</text>
-<text x="44.76000000000002" y="365.5" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:696ms">{=]1;[0:                      }+/{=]1;[0:}+/{=]1;[0:}+</text>
-<text x="44.76000000000002" y="375.0" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:720ms">:}+/{=]1                      ;[0:}+/{=]1;[0:}+/{=]1;[</text>
-<text x="44.76000000000002" y="384.5" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:744ms">1;[0:}+/                      {=]1;[0:}+/{=]1;[0:}+/{=</text>
+<rect class="terminal-cursor" x="398" y="12" width="5" height="10" rx="1" fill="#7ee787"/>
+<g class="monogram-motion">
+<text x="44.76000000000002" y="90.0" font-size="10.2" fill="#7ee787" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:-0ms">0:}+/{=]1;[0:}+/{=]1;[0:      1;[0:}+/                </text>
+<text x="44.76000000000002" y="99.5" font-size="10.2" fill="#7ee787" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:-70ms">]1;[0:}+/{=]1;[0:}+/{=]1      /{=]1;[0                </text>
+<text x="44.76000000000002" y="109.0" font-size="10.2" fill="#7ee787" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:-140ms">+/{=]1;[0:}+/{=]1;[0:}+/      0:}+/{=]                </text>
+<text x="44.76000000000002" y="118.5" font-size="10.2" fill="#7ee787" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:-210ms">[0:}+/{=]1;[0:}+/{=]1;[0      ]1;[0:}+                </text>
+<text x="44.76000000000002" y="128.0" font-size="10.2" fill="#7ee787" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:-280ms">=]1;[0:}                      +/{=]1;[                </text>
+<text x="44.76000000000002" y="137.5" font-size="10.2" fill="#7ee787" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:-350ms">}+/{=]1;                      [0:}+/{=                </text>
+<text x="44.76000000000002" y="147.0" font-size="10.2" fill="#7ee787" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:-420ms">;[0:}+/{                      =]1;[0:}                </text>
+<text x="44.76000000000002" y="156.5" font-size="10.2" fill="#7ee787" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:-490ms">{=]1;[0:                      }+/{=]1;                </text>
+<text x="44.76000000000002" y="166.0" font-size="10.2" fill="#7ee787" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:-560ms">:}+/{=]1                      ;[0:}+/{                </text>
+<text x="44.76000000000002" y="175.5" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:-630ms">1;[0:}+/                      {=]1;[0:                </text>
+<text x="44.76000000000002" y="185.0" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:-700ms">/{=]1;[0                      :}+/{=]1                </text>
+<text x="44.76000000000002" y="194.5" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:-770ms">0:}+/{=]                      1;[0:}+/                </text>
+<text x="44.76000000000002" y="204.0" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:-840ms">]1;[0:}+/{=]1;[0:}+/          /{=]1;[0                </text>
+<text x="44.76000000000002" y="213.5" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:-910ms">+/{=]1;[0:}+/{=]1;[0          0:}+/{=]                </text>
+<text x="44.76000000000002" y="223.0" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:-980ms">[0:}+/{=]1;[0:}+/{=]          ]1;[0:}+                </text>
+<text x="44.76000000000002" y="232.5" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:-1050ms">=]1;[0:}+/{=]1;[0:}+          +/{=]1;[                </text>
+<text x="44.76000000000002" y="242.0" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:-1120ms">}+/{=]1;                      [0:}+/{=                </text>
+<text x="44.76000000000002" y="251.5" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:-1190ms">;[0:}+/{                      =]1;[0:}                </text>
+<text x="44.76000000000002" y="261.0" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:-1260ms">{=]1;[0:                      }+/{=]1;                </text>
+<text x="44.76000000000002" y="270.5" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:-1330ms">:}+/{=]1                      ;[0:}+/{                </text>
+<text x="44.76000000000002" y="280.0" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:-1400ms">1;[0:}+/                      {=]1;[0:                </text>
+<text x="44.76000000000002" y="289.5" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:-1470ms">/{=]1;[0                      :}+/{=]1                </text>
+<text x="44.76000000000002" y="299.0" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:-1540ms">0:}+/{=]                      1;[0:}+/                </text>
+<text x="44.76000000000002" y="308.5" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:-1610ms">]1;[0:}+                      /{=]1;[0                </text>
+<text x="44.76000000000002" y="318.0" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:-1680ms">+/{=]1;[                      0:}+/{=]1;[0:}+/{=]1;[0:</text>
+<text x="44.76000000000002" y="327.5" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:-1750ms">[0:}+/{=                      ]1;[0:}+/{=]1;[0:}+/{=]1</text>
+<text x="44.76000000000002" y="337.0" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:-1820ms">=]1;[0:}                      +/{=]1;[0:}+/{=]1;[0:}+/</text>
+<text x="44.76000000000002" y="346.5" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:-1890ms">}+/{=]1;                      [0:}+/{=]1;[0:}+/{=]1;[0</text>
+<text x="44.76000000000002" y="356.0" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:-1960ms">;[0:}+/{                      =]1;[0:}+/{=]1;[0:}+/{=]</text>
+<text x="44.76000000000002" y="365.5" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:-2030ms">{=]1;[0:                      }+/{=]1;[0:}+/{=]1;[0:}+</text>
+<text x="44.76000000000002" y="375.0" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:-2100ms">:}+/{=]1                      ;[0:}+/{=]1;[0:}+/{=]1;[</text>
+<text x="44.76000000000002" y="384.5" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:-2170ms">1;[0:}+/                      {=]1;[0:}+/{=]1;[0:}+/{=</text>
+</g>
 <text x="210.0" y="430" font-size="29" fill="#e6edf3" text-anchor="middle" font-weight="700">Fábio Luiz</text>
 <text x="210.0" y="460" font-size="15" fill="#9da7b3" text-anchor="middle">Desenvolvimento web e projetos</text>
 <text x="210.0" y="482" font-size="15" fill="#9da7b3" text-anchor="middle">acadêmicos</text>
@@ -55,31 +84,32 @@ text { font-family: 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monosp
 <path d="M1 32H419" stroke="#30363d"/>
 <circle cx="17" cy="17" r="3.5" fill="#ff5f57"/>
 <circle cx="31" cy="17" r="3.5" fill="#febc2e"/>
-<circle cx="45" cy="17" r="3.5" fill="#28c840"/>
+<circle class="status-led" cx="45" cy="17" r="3.5" fill="#28c840"/>
 <text x="228.0" y="21" font-size="10" fill="#9da7b3" text-anchor="middle">fabiolrocha@github: ~ / stats</text>
+<rect class="terminal-cursor" x="398" y="12" width="5" height="10" rx="1" fill="#7ee787"/>
 <rect x="18.0" y="52" width="187.0" height="86" rx="6" fill="#161b22" stroke="#252c35"/>
 <text x="30.0" y="74" font-size="14" fill="#9da7b3" >sequência atual</text>
-<text x="30.0" y="108" font-size="32" fill="#7ee787" font-weight="700">3</text>
+<text x="30.0" y="108" font-size="32" fill="#7ee787" class="metric-value" font-weight="700" style="animation-delay:-0ms">3</text>
 <text x="30.0" y="126" font-size="12" fill="#9da7b3" >dias seguidos</text>
 <rect x="215.0" y="52" width="187.0" height="86" rx="6" fill="#161b22" stroke="#252c35"/>
 <text x="227.0" y="74" font-size="14" fill="#9da7b3" >maior sequência</text>
-<text x="227.0" y="108" font-size="32" fill="#e6edf3" font-weight="700">13</text>
+<text x="227.0" y="108" font-size="32" fill="#e6edf3" class="metric-value" font-weight="700" style="animation-delay:-400ms">13</text>
 <text x="227.0" y="126" font-size="12" fill="#9da7b3" >dias no período</text>
 <rect x="18.0" y="148" width="187.0" height="86" rx="6" fill="#161b22" stroke="#252c35"/>
 <text x="30.0" y="170" font-size="14" fill="#9da7b3" >contribuições</text>
-<text x="30.0" y="204" font-size="32" fill="#e6edf3" font-weight="700">749</text>
+<text x="30.0" y="204" font-size="32" fill="#e6edf3" class="metric-value" font-weight="700" style="animation-delay:-800ms">749</text>
 <text x="30.0" y="222" font-size="12" fill="#9da7b3" >últimos 365 dias</text>
 <rect x="215.0" y="148" width="187.0" height="86" rx="6" fill="#161b22" stroke="#252c35"/>
 <text x="227.0" y="170" font-size="14" fill="#9da7b3" >dias ativos</text>
-<text x="227.0" y="204" font-size="32" fill="#e6edf3" font-weight="700">126</text>
+<text x="227.0" y="204" font-size="32" fill="#e6edf3" class="metric-value" font-weight="700" style="animation-delay:-1200ms">126</text>
 <text x="227.0" y="222" font-size="12" fill="#9da7b3" >de 365 dias</text>
 <rect x="18.0" y="244" width="187.0" height="86" rx="6" fill="#161b22" stroke="#252c35"/>
 <text x="30.0" y="266" font-size="14" fill="#9da7b3" >melhor dia</text>
-<text x="30.0" y="300" font-size="32" fill="#e6edf3" font-weight="700">44</text>
+<text x="30.0" y="300" font-size="32" fill="#e6edf3" class="metric-value" font-weight="700" style="animation-delay:-1600ms">44</text>
 <text x="30.0" y="318" font-size="12" fill="#9da7b3" >07/10/2026</text>
 <rect x="215.0" y="244" width="187.0" height="86" rx="6" fill="#161b22" stroke="#252c35"/>
 <text x="227.0" y="266" font-size="14" fill="#9da7b3" >média / dia ativo</text>
-<text x="227.0" y="300" font-size="32" fill="#e6edf3" font-weight="700">5,9</text>
+<text x="227.0" y="300" font-size="32" fill="#e6edf3" class="metric-value" font-weight="700" style="animation-delay:-2000ms">5,9</text>
 <text x="227.0" y="318" font-size="12" fill="#9da7b3" >contribuições</text>
 <rect x="18" y="344" width="384" height="160" rx="6" fill="#161b22" stroke="#252c35"/>
 <text x="30" y="367" font-size="12" fill="#9da7b3" >contribuições / mês</text>
