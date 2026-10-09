@@ -4,8 +4,8 @@
 
 <p>
   <picture>
-    <source media="(max-width: 600px)" srcset="./assets/contributions-mobile.svg?v=motion-1" />
-    <img src="./assets/contributions.svg?v=motion-1" width="860" alt="Calendário animado de contribuições de Fábio Luiz nos últimos 365 dias. Atualizado diariamente com dados do GitHub." />
+    <source media="(max-width: 600px)" srcset="./assets/contributions-mobile.svg?v=theme-1" />
+    <img src="./assets/contributions.svg?v=theme-1" width="860" alt="Calendário animado de contribuições de Fábio Luiz nos últimos 365 dias. Atualizado diariamente com dados do GitHub." />
   </picture>
 </p>
 
@@ -15,8 +15,8 @@
 
 <p>
   <picture>
-    <source media="(max-width: 600px)" srcset="./assets/identity-mobile.svg?v=fl-logo-1" />
-    <img src="./assets/identity.svg?v=fl-logo-1" width="860" alt="Fábio Luiz, Brasília, Brasil. Logo FL com faixa verde subindo pelas letras, ao lado das estatísticas reais: sequências, contribuições, dias ativos e atividade por mês." />
+    <source media="(max-width: 600px)" srcset="./assets/identity-mobile.svg?v=theme-1" />
+    <img src="./assets/identity.svg?v=theme-1" width="860" alt="Fábio Luiz, Brasília, Brasil. Logo FL com faixa verde subindo pelas letras, ao lado das estatísticas reais: sequências, contribuições, dias ativos e atividade por mês." />
   </picture>
 </p>
 

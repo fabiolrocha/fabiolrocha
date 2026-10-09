@@ -21,6 +21,8 @@ A composição usa o perfil [AVIVASHISHTA29](https://github.com/AVIVASHISHTA29/A
 
 A paleta combina fundo `#0d1117`, painéis `#161b22`, bordas `#30363d`, texto `#e6edf3`, texto secundário `#9da7b3` e verde `#7ee787`. A tipografia é monoespaçada, com fontes locais e sem downloads. O logo FL usa a imagem original enviada, incorporada aos SVGs. Um recorte SVG acompanha o losango para integrá-lo ao painel; o JPEG original permanece intacto.
 
+Os SVGs acompanham o tema do visitante usando `prefers-color-scheme`. No tema claro, os fundos mudam para branco `#ffffff` e cinza `#f6f8fa`, com texto escuro `#1f2328` e verde `#1a7f37`. O calendário usa a escala de verdes correspondente ao tema, preservando os níveis de contribuição. No GitHub, a preferência de tema da página determina a aparência; quando sincronizada com o sistema, os painéis também acompanham o sistema. O losango do logo mantém as cores da imagem original. As mesmas imagens atendem aos dois temas, inclusive no celular.
+
 Os projetos ficam em uma seção recolhível. Quando o portfólio estiver pronto, esse bloco deve ser substituído por um único destaque com imagem, descrição curta e link. O local está marcado com um comentário no README; não há botão apontando para um site inexistente.
 
 ## Executar localmente

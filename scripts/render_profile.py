@@ -12,14 +12,32 @@ from textwrap import wrap
 from xml.etree import ElementTree
 
 ROOT = Path(__file__).resolve().parents[1]
-BG = "#0d1117"
-PANEL = "#161b22"
-BORDER = "#30363d"
-TEXT = "#e6edf3"
-MUTED = "#9da7b3"
-GREEN = "#7ee787"
-CELLS = ("#21262d", "#0e4429", "#006d32", "#26a641", "#7ee787")
+BG = "var(--bg, #0d1117)"
+PANEL = "var(--panel, #161b22)"
+BORDER = "var(--border, #30363d)"
+TILE_BORDER = "var(--tile-border, #252c35)"
+TEXT = "var(--text, #e6edf3)"
+MUTED = "var(--muted, #9da7b3)"
+GREEN = "var(--accent, #7ee787)"
+BAR = "var(--bar, #3e9654)"
+CELLS = tuple(f"var(--cell-{index}, {color})" for index, color in enumerate(
+    ("#21262d", "#0e4429", "#006d32", "#26a641", "#7ee787")))
 MONTHS = ("jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez")
+
+THEME_CSS = ''':root {
+  --bg: #0d1117; --panel: #161b22; --border: #30363d; --tile-border: #252c35;
+  --text: #e6edf3; --muted: #9da7b3; --accent: #7ee787; --bar: #3e9654;
+  --cell-0: #21262d; --cell-1: #0e4429; --cell-2: #006d32;
+  --cell-3: #26a641; --cell-4: #7ee787;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #ffffff; --panel: #f6f8fa; --border: #d1d9e0; --tile-border: #d1d9e0;
+    --text: #1f2328; --muted: #59636e; --accent: #1a7f37; --bar: #2da44e;
+    --cell-0: #ebedf0; --cell-1: #9be9a8; --cell-2: #40c463;
+    --cell-3: #30a14e; --cell-4: #216e39;
+  }
+}'''
 
 # Keep motion inside the SVGs: GitHub renders these as images without JavaScript.
 TERMINAL_CSS = '''@keyframes cursor-blink {
@@ -44,7 +62,7 @@ STATS_CSS = '''@keyframes chart-replay {
   24%, 82% { transform: scaleY(1); opacity: 1; }
 }
 @keyframes metric-breathe {
-  0%, 100% { opacity: 1; } 50% { opacity: .72; }
+  0%, 100% { opacity: 1; } 50% { opacity: .8; }
 }
 .month {
   transform-box: fill-box; transform-origin: center bottom;
@@ -80,6 +98,7 @@ def svg(height, title, description, body, css="", width=860, frame=True):
 <desc id="desc">{escape(description)}</desc>
 <style>
 text {{ font-family: 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace; }}
+{THEME_CSS}
 {css}
 </style>
 {background}
@@ -256,7 +275,7 @@ def heatmap(snapshot, stats, compact=False):
     body += text(legend_x + 92, legend_y, 'mais', 11, MUTED)
     return svg(height, 'Calendário de contribuições',
                f'{stats["total"]} contribuições entre {formatted_date(snapshot["from"])} '
-               f'e {formatted_date(snapshot["to"])}. Verde mais claro indica maior atividade.',
+               f'e {formatted_date(snapshot["to"])}. Os tons de verde indicam a intensidade da atividade.',
                body, HEATMAP_CSS + REDUCED_MOTION_CSS, width, frame=False)
 
 
@@ -279,7 +298,7 @@ def stats_body(snapshot, stats, width=420):
         x = padding + (index % 2) * (tile_width + gap)
         y = 52 + (index // 2) * 96
         body += (f'<rect x="{x}" y="{y}" width="{tile_width}" height="86" '
-                 f'rx="6" fill="{PANEL}" stroke="#252c35"/>')
+                 f'rx="6" fill="{PANEL}" stroke="{TILE_BORDER}"/>')
         body += text(x + 12, y + 22, label, 14, MUTED)
         body += text(x + 12, y + 56, value, 32, GREEN if index == 0 else TEXT,
                      f'class="metric-value" font-weight="700" '
@@ -287,7 +306,7 @@ def stats_body(snapshot, stats, width=420):
         body += text(x + 12, y + 74, context, 12, MUTED)
     chart_y, baseline, chart_height = 344, 478, 86
     body += (f'<rect x="{padding}" y="{chart_y}" width="{width - padding * 2}" '
-             f'height="160" rx="6" fill="{PANEL}" stroke="#252c35"/>')
+             f'height="160" rx="6" fill="{PANEL}" stroke="{TILE_BORDER}"/>')
     body += text(30, chart_y + 23, 'contribuições / mês', 12, MUTED)
     months = details['months']
     maximum = max((count for _, count in months), default=0)
@@ -300,7 +319,7 @@ def stats_body(snapshot, stats, width=420):
         if count:
             body += (f'<rect class="month" x="{x:.2f}" y="{baseline - height:.2f}" '
                      f'width="{step - 8:.2f}" height="{height:.2f}" rx="2" '
-                     f'fill="{GREEN if count == maximum else "#3e9654"}">'
+                     f'fill="{GREEN if count == maximum else BAR}">'
                      f'<title>{month}: {count} contribuições</title></rect>')
             if count == maximum:
                 body += text(round(x + (step - 8) / 2, 2), round(baseline - height - 6, 2),
