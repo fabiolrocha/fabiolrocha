@@ -27,9 +27,9 @@
 
 <h3><code>fabiolrocha@github ~ $ cat stack.txt</code></h3>
 
-![TypeScript](https://img.shields.io/badge/TypeScript-161b22?style=flat-square&logo=typescript&logoColor=7ee787) ![React](https://img.shields.io/badge/React-161b22?style=flat-square&logo=react&logoColor=7ee787) ![Java](https://img.shields.io/badge/Java-161b22?style=flat-square&logo=openjdk&logoColor=7ee787) ![Spring Boot](https://img.shields.io/badge/Spring_Boot-161b22?style=flat-square&logo=springboot&logoColor=7ee787) ![NestJS](https://img.shields.io/badge/NestJS-161b22?style=flat-square&logo=nestjs&logoColor=7ee787)
+![TypeScript](https://img.shields.io/badge/TypeScript-161b22?style=flat-square&logo=typescript&logoColor=7ee787) ![React](https://img.shields.io/badge/React-161b22?style=flat-square&logo=react&logoColor=7ee787) ![NestJS](https://img.shields.io/badge/NestJS-161b22?style=flat-square&logo=nestjs&logoColor=7ee787)
 
-![PHP](https://img.shields.io/badge/PHP-161b22?style=flat-square&logo=php&logoColor=7ee787) ![Laravel](https://img.shields.io/badge/Laravel-161b22?style=flat-square&logo=laravel&logoColor=7ee787) ![JavaScript](https://img.shields.io/badge/JavaScript-161b22?style=flat-square&logo=javascript&logoColor=7ee787) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-161b22?style=flat-square&logo=postgresql&logoColor=7ee787)
+![PHP](https://img.shields.io/badge/PHP-161b22?style=flat-square&logo=php&logoColor=7ee787) ![Laravel](https://img.shields.io/badge/Laravel-161b22?style=flat-square&logo=laravel&logoColor=7ee787) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-161b22?style=flat-square&logo=postgresql&logoColor=7ee787)
 
 <br>
 
@@ -56,7 +56,7 @@
 <details>
   <summary>Outras tecnologias nos meus estudos</summary>
 
-![Python](https://img.shields.io/badge/Python-161b22?style=flat-square&logo=python&logoColor=7ee787) ![C](https://img.shields.io/badge/C-161b22?style=flat-square&logo=c&logoColor=7ee787)
+![Java](https://img.shields.io/badge/Java-161b22?style=flat-square&logo=openjdk&logoColor=7ee787) ![Spring Boot](https://img.shields.io/badge/Spring_Boot-161b22?style=flat-square&logo=springboot&logoColor=7ee787) ![JavaScript](https://img.shields.io/badge/JavaScript-161b22?style=flat-square&logo=javascript&logoColor=7ee787) ![Python](https://img.shields.io/badge/Python-161b22?style=flat-square&logo=python&logoColor=7ee787) ![C](https://img.shields.io/badge/C-161b22?style=flat-square&logo=c&logoColor=7ee787)
 
 </details>
 
