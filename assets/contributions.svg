@@ -279,11 +279,11 @@ text { font-family: 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monosp
 <rect class="cell" x="258" y="68" width="11" height="11" rx="2" fill="#21262d" style="animation-delay:172ms">
 <title>04/01/2026: 0 contribuições</title>
 </rect>
-<rect class="cell" x="258" y="82" width="11" height="11" rx="2" fill="#0e4429" style="animation-delay:174ms">
-<title>05/01/2026: 1 contribuições</title>
+<rect class="cell" x="258" y="82" width="11" height="11" rx="2" fill="#21262d" style="animation-delay:174ms">
+<title>05/01/2026: 0 contribuições</title>
 </rect>
-<rect class="cell" x="258" y="96" width="11" height="11" rx="2" fill="#21262d" style="animation-delay:176ms">
-<title>06/01/2026: 0 contribuições</title>
+<rect class="cell" x="258" y="96" width="11" height="11" rx="2" fill="#0e4429" style="animation-delay:176ms">
+<title>06/01/2026: 1 contribuições</title>
 </rect>
 <rect class="cell" x="258" y="110" width="11" height="11" rx="2" fill="#21262d" style="animation-delay:178ms">
 <title>07/01/2026: 0 contribuições</title>
@@ -680,10 +680,10 @@ text { font-family: 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monosp
 <title>16/05/2026: 0 contribuições</title>
 </rect>
 <rect class="cell" x="524" y="68" width="11" height="11" rx="2" fill="#0e4429" style="animation-delay:438ms">
-<title>17/05/2026: 3 contribuições</title>
+<title>17/05/2026: 2 contribuições</title>
 </rect>
 <rect class="cell" x="524" y="82" width="11" height="11" rx="2" fill="#0e4429" style="animation-delay:440ms">
-<title>18/05/2026: 3 contribuições</title>
+<title>18/05/2026: 4 contribuições</title>
 </rect>
 <rect class="cell" x="524" y="96" width="11" height="11" rx="2" fill="#21262d" style="animation-delay:442ms">
 <title>19/05/2026: 0 contribuições</title>
@@ -935,10 +935,10 @@ text { font-family: 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monosp
 <title>08/08/2026: 0 contribuições</title>
 </rect>
 <rect class="cell" x="692" y="68" width="11" height="11" rx="2" fill="#0e4429" style="animation-delay:606ms">
-<title>09/08/2026: 3 contribuições</title>
+<title>09/08/2026: 2 contribuições</title>
 </rect>
 <rect class="cell" x="692" y="82" width="11" height="11" rx="2" fill="#26a641" style="animation-delay:608ms">
-<title>10/08/2026: 30 contribuições</title>
+<title>10/08/2026: 31 contribuições</title>
 </rect>
 <rect class="cell" x="692" y="96" width="11" height="11" rx="2" fill="#0e4429" style="animation-delay:610ms">
 <title>11/08/2026: 1 contribuições</title>
