@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="860" height="560" viewBox="0 0 860 560" role="img" aria-labelledby="title desc">
 <title id="title">Fábio Luiz — identidade e atividade</title>
-<desc id="desc">Logo FL em um losango escuro, com faixa verde ascendente. Fábio Luiz, Brasília, Brasil. Desenvolvimento web e projetos acadêmicos. 765 contribuições em 365 dias; 126 dias ativos; maior sequência de 13 dias.</desc>
+<desc id="desc">Logo FL em um losango escuro, com faixa verde ascendente. Fábio Luiz, Brasília, Brasil. Desenvolvedor Full-stack. 765 contribuições em 365 dias; 126 dias ativos; maior sequência de 13 dias.</desc>
 <style>
 text { font-family: 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace; }
 :root {
@@ -84,8 +84,7 @@ text { font-family: 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monosp
 </g>
 </svg>
 <text x="210.0" y="430" font-size="29" fill="var(--text, #e6edf3)" text-anchor="middle" font-weight="700">Fábio Luiz</text>
-<text x="210.0" y="460" font-size="15" fill="var(--muted, #9da7b3)" text-anchor="middle">Desenvolvimento web e projetos</text>
-<text x="210.0" y="482" font-size="15" fill="var(--muted, #9da7b3)" text-anchor="middle">acadêmicos</text>
+<text x="210.0" y="460" font-size="15" fill="var(--muted, #9da7b3)" text-anchor="middle">Desenvolvedor Full-stack</text>
 <text x="210.0" y="520" font-size="13" fill="var(--accent, #7ee787)" text-anchor="middle">Brasília, Brasil</text>
 <g transform="translate(440 0)">
 <rect x="1" y="1" width="418" height="558" rx="10" fill="var(--bg, #0d1117)" stroke="var(--border, #30363d)"/>

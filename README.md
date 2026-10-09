@@ -15,12 +15,12 @@
 
 <p>
   <picture>
-    <source media="(max-width: 600px)" srcset="./assets/identity-mobile.svg?v=theme-1" />
-    <img src="./assets/identity.svg?v=theme-1" width="860" alt="Fábio Luiz, Brasília, Brasil. Logo FL com faixa verde subindo pelas letras, ao lado das estatísticas reais: sequências, contribuições, dias ativos e atividade por mês." />
+    <source media="(max-width: 600px)" srcset="./assets/identity-mobile.svg?v=full-stack-1" />
+    <img src="./assets/identity.svg?v=full-stack-1" width="860" alt="Fábio Luiz, Desenvolvedor Full-stack, Brasília, Brasil. Logo FL com faixa verde subindo pelas letras, ao lado das estatísticas reais: sequências, contribuições, dias ativos e atividade por mês." />
   </picture>
 </p>
 
-<p><b>Desenvolvimento web e projetos acadêmicos</b></p>
+<p><b>Desenvolvedor Full-stack</b></p>
 <p>Da interface à API e ao banco de dados.<br>Compartilhando o que construo e aprendo pelo caminho.</p>
 
 <br>
