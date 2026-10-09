@@ -11,6 +11,7 @@ Antes da publicação deste visual, a versão que estava no GitHub foi preservad
 - **Apresentação, projetos, tecnologias e contatos:** edite `README.md`.
 - **Nome, usuário, localização e frase do painel de identidade:** edite `profile.json` e gere as imagens novamente. Atualize também os textos correspondentes no README.
 - **Cores, tipografia e composição:** edite `scripts/render_profile.py`. Os SVGs gerados são sobrescritos na próxima atualização.
+- **Arte FL:** `assets/fl-logo.jpeg` contém a imagem original enviada. Os limites do losango e a máscara das letras são definidos no renderizador.
 
 Os projetos em destaque são escolhidos manualmente. As tecnologias indicam ferramentas presentes nesses projetos e nos estudos, sem atribuir níveis de domínio.
 
@@ -18,7 +19,7 @@ Os projetos em destaque são escolhidos manualmente. As tecnologias indicam ferr
 
 A composição usa o perfil [AVIVASHISHTA29](https://github.com/AVIVASHISHTA29/AVIVASHISHTA29) como referência: calendário no topo, identidade e atividade lado a lado, comandos centralizados e links compactos. O código dos SVGs é próprio.
 
-A paleta combina fundo `#0d1117`, painéis `#161b22`, bordas `#30363d`, texto `#e6edf3`, texto secundário `#9da7b3` e verde `#7ee787`. A tipografia é monoespaçada, com fontes locais e sem downloads. O monograma FL é desenhado com caracteres SVG; não usa fotografia nem geração de imagem.
+A paleta combina fundo `#0d1117`, painéis `#161b22`, bordas `#30363d`, texto `#e6edf3`, texto secundário `#9da7b3` e verde `#7ee787`. A tipografia é monoespaçada, com fontes locais e sem downloads. O logo FL usa a imagem original enviada, incorporada aos SVGs. Um recorte SVG acompanha o losango para integrá-lo ao painel; o JPEG original permanece intacto.
 
 Os projetos ficam em uma seção recolhível. Quando o portfólio estiver pronto, esse bloco deve ser substituído por um único destaque com imagem, descrição curta e link. O local está marcado com um comentário no README; não há botão apontando para um site inexistente.
 
@@ -59,7 +60,7 @@ Agendamentos podem atrasar, e o GitHub pode desativá-los após 60 dias sem ativ
 
 A coleta rejeita calendários incompletos, datas repetidas e totais inconsistentes. O snapshot contém somente datas, contagens e quantidade de repositórios públicos; não armazena nomes ou conteúdo de repositórios privados. O calendário reflete os dados visíveis ao token e as preferências de contribuições privadas do perfil; contagens agregadas podem variar entre uma execução local autenticada e o token do Actions.
 
-As animações se repetem continuamente: o monograma FL flutua com uma onda de brilho, os dias com contribuições pulsam em sequência, os terminais têm cursor piscante e as barras mensais repetem uma revelação de baixo para cima. As barras usam a mesma escala durante a animação, preservando a proporção entre os meses; os números não mudam. Dias sem contribuições permanecem estáticos. Os ciclos duram entre 2 e 10 segundos e usam apenas CSS interno dos SVGs, sem JavaScript.
+As animações se repetem continuamente: uma faixa verde sobe pelas letras brancas do logo FL, os dias com contribuições pulsam em sequência, os terminais têm cursor piscante e as barras mensais repetem uma revelação de baixo para cima. O logo fica parado, sem verde fixo ou pulsação de opacidade; a faixa passa em um ciclo de 7 segundos e fica restrita às letras por uma máscara SVG. As barras usam a mesma escala durante a animação, preservando a proporção entre os meses; os números não mudam. Dias sem contribuições permanecem estáticos. Os ciclos duram entre 2 e 10 segundos e usam apenas CSS interno dos SVGs, sem JavaScript.
 
 Todos os movimentos respeitam `prefers-reduced-motion`: com essa preferência ativa, o desenho aparece completo e estático. As informações também permanecem disponíveis quando a animação não é reproduzida.
 

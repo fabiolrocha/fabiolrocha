@@ -2,6 +2,7 @@
 """Render standalone SVGs from a saved GitHub snapshot; no network required."""
 
 import argparse
+import base64
 from datetime import date, timedelta
 from html import escape
 import json
@@ -30,14 +31,13 @@ TERMINAL_CSS = '''@keyframes cursor-blink {
 .terminal-cursor { animation: cursor-blink 2s steps(1, end) infinite; }
 .status-led { animation: status-breathe 5s ease-in-out infinite; }'''
 
-ASCII_CSS = '''@keyframes float {
-  0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); }
+LOGO_CSS = '''@keyframes green-rise {
+  0% { transform: translateY(0); opacity: 0; }
+  8% { opacity: 1; }
+  82% { transform: translateY(-900px); opacity: 1; }
+  83%, 100% { transform: translateY(-900px); opacity: 0; }
 }
-@keyframes ascii-wave {
-  0%, 65%, 100% { opacity: 1; } 30% { opacity: .4; }
-}
-.monogram-motion { animation: float 6s ease-in-out infinite; }
-.ascii { animation: ascii-wave 5s ease-in-out infinite; }'''
+.logo-scan { opacity: 0; animation: green-rise 7s linear infinite; }'''
 
 STATS_CSS = '''@keyframes chart-replay {
   0%, 100% { transform: scaleY(.12); opacity: .55; }
@@ -62,7 +62,7 @@ HEATMAP_CSS = '''@keyframes contribution-wave {
 }'''
 
 REDUCED_MOTION_CSS = '''@media (prefers-reduced-motion: reduce) {
-  .terminal-cursor, .status-led, .monogram-motion, .ascii,
+  .terminal-cursor, .status-led, .logo-scan,
   .cell, .month, .metric-value { animation: none !important; }
 }'''
 
@@ -164,32 +164,35 @@ def terminal(width, height, command, content):
 
 
 def monogram_body(profile, width=420, compact=False):
-    # These are letter shapes composed directly in SVG, not a raster conversion.
-    glyph_f = ('111111', '110000', '110000', '111110',
-               '110000', '110000', '110000', '110000')
-    glyph_l = ('110000',) * 6 + ('111111',) * 2
-    characters = '01{}[]/:;=+'
-    scale = 4
-    size, leading, top = (8.5, 7.4, 68) if compact else (10.2, 9.5, 90)
-    columns = 54
-    length = columns * size * .6
-    left = (width - length) / 2
-    body = '<g class="monogram-motion">'
-    for row in range(8 * scale):
-        line = ''
-        for column in range(columns):
-            if column < 24:
-                on = glyph_f[row // scale][column // scale] == '1'
-            elif column >= 30:
-                on = glyph_l[row // scale][(column - 30) // scale] == '1'
-            else:
-                on = False
-            line += characters[(row * 5 + column * 7) % len(characters)] if on else ' '
-        body += text(left, top + row * leading, line, size,
-                     GREEN if row < 9 else TEXT,
-                     f'class="ascii" xml:space="preserve" textLength="{length}" '
-                     f'lengthAdjust="spacingAndGlyphs" style="animation-delay:-{row * 70}ms"')
-    body += '</g>'
+    # Embed the exact supplied artwork, so GitHub's SVG image needs no external fetch.
+    artwork = base64.b64encode((ROOT / 'assets/fl-logo.jpeg').read_bytes()).decode('ascii')
+    size, top = (232, 58) if compact else (326, 66)
+    left = (width - size) / 2
+    body = f'''<svg x="{left}" y="{top}" width="{size}" height="{size}" viewBox="210 166 700 700">
+<defs>
+  <image id="fl-artwork" width="1080" height="1080" href="data:image/jpeg;base64,{artwork}"/>
+  <clipPath id="fl-diamond"><path d="M558 172L902 516L559 859L216 516Z"/></clipPath>
+  <filter id="fl-white-ink" color-interpolation-filters="sRGB" x="0" y="0" width="100%" height="100%">
+    <feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  .2126 .7152 .0722 0 0"/>
+    <feComponentTransfer><feFuncA type="linear" slope="10" intercept="-7"/></feComponentTransfer>
+  </filter>
+  <mask id="fl-letters" maskUnits="userSpaceOnUse" x="210" y="166" width="700" height="700" style="mask-type:alpha">
+    <use href="#fl-artwork" filter="url(#fl-white-ink)"/>
+  </mask>
+  <linearGradient id="fl-green-band" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="{GREEN}" stop-opacity="0"/>
+    <stop offset=".45" stop-color="{GREEN}"/>
+    <stop offset=".65" stop-color="#22c55e"/>
+    <stop offset="1" stop-color="#22c55e" stop-opacity="0"/>
+  </linearGradient>
+</defs>
+<g clip-path="url(#fl-diamond)">
+  <use href="#fl-artwork"/>
+  <g mask="url(#fl-letters)">
+    <rect class="logo-scan" x="210" y="860" width="700" height="170" fill="url(#fl-green-band)"/>
+  </g>
+</g>
+</svg>'''
     name_y = 326 if compact else 430
     body += text(width / 2, name_y, profile['name'], 29, TEXT,
                  'text-anchor="middle" font-weight="700"')
@@ -205,9 +208,9 @@ def monogram(profile):
     body = terminal(430, 560, profile['username'] + '@github: ~ / identity',
                     monogram_body(profile, 430))
     return svg(560, 'Monograma FL — ' + profile['name'],
-               'As iniciais F e L desenhadas com caracteres de terminal. ' +
+               'Logo FL original em um losango escuro, com uma faixa verde subindo pelas letras. ' +
                profile['headline'] + '. ' + profile['location'] + '.',
-               body, TERMINAL_CSS + ASCII_CSS + REDUCED_MOTION_CSS, 430, frame=False)
+               body, TERMINAL_CSS + LOGO_CSS + REDUCED_MOTION_CSS, 430, frame=False)
 
 
 def heatmap(snapshot, stats, compact=False):
@@ -330,10 +333,10 @@ def identity(snapshot, profile, stats, compact=False):
     offset_x, offset_y = (0, 446) if compact else (440, 0)
     body = portrait + f'<g transform="translate({offset_x} {offset_y})">{dashboard}</g>'
     return svg(1006 if compact else 560, profile['name'] + ' — identidade e atividade',
-               f'Monograma FL em ASCII. {profile["name"]}, {profile["location"]}. '
+               f'Logo FL em um losango escuro, com faixa verde ascendente. {profile["name"]}, {profile["location"]}. '
                f'{profile["headline"]}. {stats["total"]} contribuições em 365 dias; '
                f'{stats["active"]} dias ativos; maior sequência de {stats["longest"]} dias.',
-               body, TERMINAL_CSS + ASCII_CSS + STATS_CSS + REDUCED_MOTION_CSS,
+               body, TERMINAL_CSS + LOGO_CSS + STATS_CSS + REDUCED_MOTION_CSS,
                width, frame=False)
 
 

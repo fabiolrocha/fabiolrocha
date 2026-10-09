@@ -11,7 +11,7 @@ text { font-family: 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monosp
   transform-box: fill-box; transform-origin: center;
   animation: contribution-wave 7s ease-in-out infinite;
 }@media (prefers-reduced-motion: reduce) {
-  .terminal-cursor, .status-led, .monogram-motion, .ascii,
+  .terminal-cursor, .status-led, .logo-scan,
   .cell, .month, .metric-value { animation: none !important; }
 }
 </style>

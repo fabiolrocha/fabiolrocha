@@ -8,6 +8,7 @@ on:
   push:
     paths:
       - 'profile.json'
+      - 'assets/fl-logo.jpeg'
       - 'scripts/**'
       - 'tests/**'
       - '.github/workflows/update-profile.yml'

@@ -15,8 +15,8 @@
 
 <p>
   <picture>
-    <source media="(max-width: 600px)" srcset="./assets/identity-mobile.svg?v=motion-1" />
-    <img src="./assets/identity.svg?v=motion-1" width="860" alt="Fábio Luiz, Brasília, Brasil. Monograma FL animado em ASCII ao lado das estatísticas reais: sequências, contribuições, dias ativos e atividade por mês." />
+    <source media="(max-width: 600px)" srcset="./assets/identity-mobile.svg?v=fl-logo-1" />
+    <img src="./assets/identity.svg?v=fl-logo-1" width="860" alt="Fábio Luiz, Brasília, Brasil. Logo FL com faixa verde subindo pelas letras, ao lado das estatísticas reais: sequências, contribuições, dias ativos e atividade por mês." />
   </picture>
 </p>
 
