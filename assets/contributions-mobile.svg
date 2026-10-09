@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="430" height="400" viewBox="0 0 430 400" role="img" aria-labelledby="title desc">
 <title id="title">Calendário de contribuições</title>
-<desc id="desc">749 contribuições entre 10/10/2025 e 09/10/2026. Verde mais claro indica maior atividade.</desc>
+<desc id="desc">750 contribuições entre 10/10/2025 e 09/10/2026. Verde mais claro indica maior atividade.</desc>
 <style>
 text { font-family: 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace; }
 @keyframes contribution-wave {
@@ -17,7 +17,7 @@ text { font-family: 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monosp
 </style>
 
 <rect width="430" height="400" rx="10" fill="#0d1117"/>
-<text x="28" y="28" font-size="16" fill="#e6edf3" >749 contribuições / últimos 365 dias</text>
+<text x="28" y="28" font-size="16" fill="#e6edf3" >750 contribuições / últimos 365 dias</text>
 <text x="28" y="52" font-size="12" fill="#9da7b3" >10/10/2025 — 09/10/2026</text>
 <text x="29" y="117" font-size="12" fill="#9da7b3" >seg</text>
 <text x="29" y="145" font-size="12" fill="#9da7b3" >qua</text>
@@ -1131,7 +1131,7 @@ text { font-family: 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monosp
 <title>08/10/2026: 4 contribuições</title>
 </rect>
 <rect class="cell" data-active="true" x="376" y="320" width="9" height="11" rx="2" fill="#0e4429" style="animation-delay:-6552ms">
-<title>09/10/2026: 2 contribuições</title>
+<title>09/10/2026: 3 contribuições</title>
 </rect>
 <text x="28" y="378" font-size="11" fill="#9da7b3" >atividade no GitHub</text>
 <text x="160" y="378" font-size="11" fill="#9da7b3" >menos</text>
