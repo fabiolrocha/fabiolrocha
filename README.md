@@ -33,7 +33,7 @@
 
 <br>
 
-<h3><code>Linksh</code></h3>
+<h3><code>Links</code></h3>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logoColor=white)](https://www.linkedin.com/in/f%C3%A1bio-luiz-76522924a/) [![E-mail](https://img.shields.io/badge/E--mail-161b22?style=for-the-badge&logo=gmail&logoColor=7ee787)](mailto:fabiolrocha2013@gmail.com) [![Instagram](https://img.shields.io/badge/Instagram-161b22?style=for-the-badge&logo=instagram&logoColor=7ee787)](https://www.instagram.com/fabio_rocha0/)
 
