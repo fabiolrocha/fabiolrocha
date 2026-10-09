@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="430" height="1006" viewBox="0 0 430 1006" role="img" aria-labelledby="title desc">
 <title id="title">Fábio Luiz — identidade e atividade</title>
-<desc id="desc">Logo FL em um losango escuro, com faixa verde ascendente. Fábio Luiz, Brasília, Brasil. Desenvolvimento web e projetos acadêmicos. 762 contribuições em 365 dias; 126 dias ativos; maior sequência de 13 dias.</desc>
+<desc id="desc">Logo FL em um losango escuro, com faixa verde ascendente. Fábio Luiz, Brasília, Brasil. Desenvolvimento web e projetos acadêmicos. 765 contribuições em 365 dias; 126 dias ativos; maior sequência de 13 dias.</desc>
 <style>
 text { font-family: 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace; }
 :root {
@@ -105,7 +105,7 @@ text { font-family: 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monosp
 <text x="232.0" y="126" font-size="12" fill="var(--muted, #9da7b3)" >dias no período</text>
 <rect x="18.0" y="148" width="192.0" height="86" rx="6" fill="var(--panel, #161b22)" stroke="var(--tile-border, #252c35)"/>
 <text x="30.0" y="170" font-size="14" fill="var(--muted, #9da7b3)" >contribuições</text>
-<text x="30.0" y="204" font-size="32" fill="var(--text, #e6edf3)" class="metric-value" font-weight="700" style="animation-delay:-800ms">762</text>
+<text x="30.0" y="204" font-size="32" fill="var(--text, #e6edf3)" class="metric-value" font-weight="700" style="animation-delay:-800ms">765</text>
 <text x="30.0" y="222" font-size="12" fill="var(--muted, #9da7b3)" >últimos 365 dias</text>
 <rect x="220.0" y="148" width="192.0" height="86" rx="6" fill="var(--panel, #161b22)" stroke="var(--tile-border, #252c35)"/>
 <text x="232.0" y="170" font-size="14" fill="var(--muted, #9da7b3)" >dias ativos</text>
@@ -117,7 +117,7 @@ text { font-family: 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monosp
 <text x="30.0" y="318" font-size="12" fill="var(--muted, #9da7b3)" >07/10/2026</text>
 <rect x="220.0" y="244" width="192.0" height="86" rx="6" fill="var(--panel, #161b22)" stroke="var(--tile-border, #252c35)"/>
 <text x="232.0" y="266" font-size="14" fill="var(--muted, #9da7b3)" >média / dia ativo</text>
-<text x="232.0" y="300" font-size="32" fill="var(--text, #e6edf3)" class="metric-value" font-weight="700" style="animation-delay:-2000ms">6,0</text>
+<text x="232.0" y="300" font-size="32" fill="var(--text, #e6edf3)" class="metric-value" font-weight="700" style="animation-delay:-2000ms">6,1</text>
 <text x="232.0" y="318" font-size="12" fill="var(--muted, #9da7b3)" >contribuições</text>
 <rect x="18" y="344" width="394" height="160" rx="6" fill="var(--panel, #161b22)" stroke="var(--tile-border, #252c35)"/>
 <text x="30" y="367" font-size="12" fill="var(--muted, #9da7b3)" >contribuições / mês</text>
@@ -168,8 +168,8 @@ text { font-family: 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monosp
 <title>2026-09: 117 contribuições</title>
 </rect>
 <text x="353.31" y="495" font-size="9" fill="var(--muted, #9da7b3)" text-anchor="middle">set</text>
-<rect class="month" x="371.54" y="437.84" width="20.46" height="40.16" rx="2" fill="var(--bar, #3e9654)">
-<title>2026-10: 85 contribuições</title>
+<rect class="month" x="371.54" y="436.42" width="20.46" height="41.58" rx="2" fill="var(--bar, #3e9654)">
+<title>2026-10: 88 contribuições</title>
 </rect>
 <text x="381.77" y="495" font-size="9" fill="var(--muted, #9da7b3)" text-anchor="middle">out</text>
 <text x="18" y="527" font-size="11" fill="var(--muted, #9da7b3)" >15 repositórios públicos</text>
