@@ -1,6 +1,6 @@
 <div align="center">
 
-<h3><code>fabiolrocha@github ~ $ ./contributions.sh</code></h3>
+<h3><code>Contribuicões</code></h3>
 
 <p>
   <picture>
@@ -11,7 +11,7 @@
 
 <br>
 
-<h3><code>fabiolrocha@github ~ $ whoami</code></h3>
+<h3><code>Perfil</code></h3>
 
 <p>
   <picture>
@@ -25,7 +25,7 @@
 
 <br>
 
-<h3><code>fabiolrocha@github ~ $ cat stack.txt</code></h3>
+<h3><code>Stack</code></h3>
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-161b22?style=flat-square&logo=typescript&logoColor=7ee787) ![React](https://img.shields.io/badge/React-161b22?style=flat-square&logo=react&logoColor=7ee787) ![NestJS](https://img.shields.io/badge/NestJS-161b22?style=flat-square&logo=nestjs&logoColor=7ee787)
 
@@ -33,7 +33,7 @@
 
 <br>
 
-<h3><code>fabiolrocha@github ~ $ ./links.sh</code></h3>
+<h3><code>Linksh</code></h3>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logoColor=white)](https://www.linkedin.com/in/f%C3%A1bio-luiz-76522924a/) [![E-mail](https://img.shields.io/badge/E--mail-161b22?style=for-the-badge&logo=gmail&logoColor=7ee787)](mailto:fabiolrocha2013@gmail.com) [![Instagram](https://img.shields.io/badge/Instagram-161b22?style=for-the-badge&logo=instagram&logoColor=7ee787)](https://www.instagram.com/fabio_rocha0/)
 
