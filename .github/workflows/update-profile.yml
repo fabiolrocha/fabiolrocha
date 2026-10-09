@@ -1,0 +1,50 @@
+name: Update profile artwork
+
+on:
+  schedule:
+    # 06:17 in Brasília (09:17 UTC); GitHub may delay scheduled runs.
+    - cron: '17 9 * * *'
+  workflow_dispatch:
+  push:
+    paths:
+      - 'profile.json'
+      - 'scripts/**'
+      - 'tests/**'
+      - '.github/workflows/update-profile.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-artwork-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  render:
+    if: github.ref_name == github.event.repository.default_branch
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+      - name: Verify calendar and SVG generation
+        run: python -m unittest discover -s tests -v
+      - name: Fetch GitHub snapshot
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python scripts/fetch_github_data.py
+      - name: Render artwork
+        run: python scripts/render_profile.py
+      - name: Commit changed data and artwork
+        run: |
+          git add -- data/github.json assets/*.svg
+          if git diff --cached --quiet; then
+            echo "Profile artwork is already up to date."
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'chore: refresh profile artwork'
+          git push

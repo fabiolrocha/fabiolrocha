@@ -1,17 +1,67 @@
-# | Fábio Luiz
+<div align="center">
 
-<div style="display: inline_block"><br>
-  <img align="center" alt="Fabio-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-  <img align="center" alt="Fabio-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-  <img align="center" alt="Fabio-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
-  <img align="center" alt="Fabio-C" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" />
-  <img align="center" alt="Fabio-JAVA" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
-  <img align="center" alt="Fabio-PHP" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
-  <src="https://media.discordapp.net/attachments/639956127056134178/890373478988013628/Publicacoes_Instagram_1_1.png?width=676&height=676">
-</div>
+<h3><code>fabiolrocha@github ~ $ ./contributions.sh</code></h3>
+
+<p>
+  <picture>
+    <source media="(max-width: 600px)" srcset="./assets/contributions-mobile.svg" />
+    <img src="./assets/contributions.svg" width="860" alt="Calendário de contribuições de Fábio Luiz nos últimos 365 dias. Atualizado diariamente com dados do GitHub." />
+  </picture>
+</p>
+
 <br>
-<div>
-  <a href="https://www.instagram.com/fabio_rocha0/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
-  <a href = "mailto:fabiolrocha2013@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
-  <a href="https://www.linkedin.com/in/f%C3%A1bio-luiz-76522924a/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
+
+<h3><code>fabiolrocha@github ~ $ whoami</code></h3>
+
+<p>
+  <picture>
+    <source media="(max-width: 600px)" srcset="./assets/identity-mobile.svg" />
+    <img src="./assets/identity.svg" width="860" alt="Fábio Luiz, Brasília, Brasil. Monograma FL em ASCII ao lado das estatísticas reais: sequências, contribuições, dias ativos e atividade por mês." />
+  </picture>
+</p>
+
+<p><b>Desenvolvimento web e projetos acadêmicos</b></p>
+<p>Da interface à API e ao banco de dados.<br>Compartilhando o que construo e aprendo pelo caminho.</p>
+
+<br>
+
+<h3><code>fabiolrocha@github ~ $ cat stack.txt</code></h3>
+
+![TypeScript](https://img.shields.io/badge/TypeScript-161b22?style=flat-square&logo=typescript&logoColor=7ee787) ![React](https://img.shields.io/badge/React-161b22?style=flat-square&logo=react&logoColor=7ee787) ![Java](https://img.shields.io/badge/Java-161b22?style=flat-square&logo=openjdk&logoColor=7ee787) ![Spring Boot](https://img.shields.io/badge/Spring_Boot-161b22?style=flat-square&logo=springboot&logoColor=7ee787) ![NestJS](https://img.shields.io/badge/NestJS-161b22?style=flat-square&logo=nestjs&logoColor=7ee787)
+
+![HTML5](https://img.shields.io/badge/HTML5-161b22?style=flat-square&logo=html5&logoColor=7ee787) ![CSS3](https://img.shields.io/badge/CSS3-161b22?style=flat-square&logo=css&logoColor=7ee787) ![JavaScript](https://img.shields.io/badge/JavaScript-161b22?style=flat-square&logo=javascript&logoColor=7ee787) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-161b22?style=flat-square&logo=postgresql&logoColor=7ee787) ![MySQL](https://img.shields.io/badge/MySQL-161b22?style=flat-square&logo=mysql&logoColor=7ee787)
+
+<br>
+
+<h3><code>fabiolrocha@github ~ $ ./links.sh</code></h3>
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logoColor=white)](https://www.linkedin.com/in/f%C3%A1bio-luiz-76522924a/) [![E-mail](https://img.shields.io/badge/E--mail-161b22?style=for-the-badge&logo=gmail&logoColor=7ee787)](mailto:fabiolrocha2013@gmail.com) [![Instagram](https://img.shields.io/badge/Instagram-161b22?style=for-the-badge&logo=instagram&logoColor=7ee787)](https://www.instagram.com/fabio_rocha0/)
+
+<br>
+
+<!-- Substituir este bloco por um destaque do portfólio quando ele estiver pronto. -->
+<details>
+  <summary>Alguns projetos que construí em equipe e nos estudos</summary>
+
+**[FreeLanceNow](https://github.com/fabiolrocha/FreeLanceNow)** — Marketplace acadêmico de serviços, em desenvolvimento.<br>React, TypeScript, Java / Spring Boot e PostgreSQL.
+
+**[HortiFruti](https://github.com/fabiolrocha/HortiFruti)** — Sistema de hortifruti com API para usuários e pedidos.<br>TypeScript, NestJS e MySQL.
+
+**[Pokédex](https://github.com/fabiolrocha/Pokedex)** — Prática de desenvolvimento para o navegador.<br>HTML, CSS e JavaScript.
+
+[Ver todos os repositórios](https://github.com/fabiolrocha?tab=repositories)
+
+</details>
+
+<details>
+  <summary>Outras tecnologias nos meus estudos</summary>
+
+![Python](https://img.shields.io/badge/Python-161b22?style=flat-square&logo=python&logoColor=7ee787) ![PHP](https://img.shields.io/badge/PHP-161b22?style=flat-square&logo=php&logoColor=7ee787) ![Laravel](https://img.shields.io/badge/Laravel-161b22?style=flat-square&logo=laravel&logoColor=7ee787) ![C](https://img.shields.io/badge/C-161b22?style=flat-square&logo=c&logoColor=7ee787)
+
+</details>
+
+<br>
+
+<sub>Atividade dos últimos 365 dias · atualização diária · <a href="./docs/profile.md">como funciona</a></sub>
+
 </div>

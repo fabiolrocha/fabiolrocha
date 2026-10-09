@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="430" height="560" viewBox="0 0 430 560" role="img" aria-labelledby="title desc">
+<title id="title">Monograma FL — Fábio Luiz</title>
+<desc id="desc">As iniciais F e L desenhadas com caracteres de terminal. Desenvolvimento web e projetos acadêmicos. Brasília, Brasil.</desc>
+<style>
+text { font-family: 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace; }
+@keyframes type { from { opacity: .12; } to { opacity: 1; } }
+.ascii { animation: type .7s ease-out both; }
+@media (prefers-reduced-motion: reduce) { .ascii { animation: none; } }
+</style>
+
+<rect x="1" y="1" width="428" height="558" rx="10" fill="#0d1117" stroke="#30363d"/>
+<path d="M1 32H429" stroke="#30363d"/>
+<circle cx="17" cy="17" r="3.5" fill="#ff5f57"/>
+<circle cx="31" cy="17" r="3.5" fill="#febc2e"/>
+<circle cx="45" cy="17" r="3.5" fill="#28c840"/>
+<text x="233.0" y="21" font-size="10" fill="#9da7b3" text-anchor="middle">fabiolrocha@github: ~ / identity</text>
+<text x="49.76000000000002" y="90.0" font-size="10.2" fill="#7ee787" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:0ms">0:}+/{=]1;[0:}+/{=]1;[0:      1;[0:}+/                </text>
+<text x="49.76000000000002" y="99.5" font-size="10.2" fill="#7ee787" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:24ms">]1;[0:}+/{=]1;[0:}+/{=]1      /{=]1;[0                </text>
+<text x="49.76000000000002" y="109.0" font-size="10.2" fill="#7ee787" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:48ms">+/{=]1;[0:}+/{=]1;[0:}+/      0:}+/{=]                </text>
+<text x="49.76000000000002" y="118.5" font-size="10.2" fill="#7ee787" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:72ms">[0:}+/{=]1;[0:}+/{=]1;[0      ]1;[0:}+                </text>
+<text x="49.76000000000002" y="128.0" font-size="10.2" fill="#7ee787" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:96ms">=]1;[0:}                      +/{=]1;[                </text>
+<text x="49.76000000000002" y="137.5" font-size="10.2" fill="#7ee787" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:120ms">}+/{=]1;                      [0:}+/{=                </text>
+<text x="49.76000000000002" y="147.0" font-size="10.2" fill="#7ee787" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:144ms">;[0:}+/{                      =]1;[0:}                </text>
+<text x="49.76000000000002" y="156.5" font-size="10.2" fill="#7ee787" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:168ms">{=]1;[0:                      }+/{=]1;                </text>
+<text x="49.76000000000002" y="166.0" font-size="10.2" fill="#7ee787" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:192ms">:}+/{=]1                      ;[0:}+/{                </text>
+<text x="49.76000000000002" y="175.5" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:216ms">1;[0:}+/                      {=]1;[0:                </text>
+<text x="49.76000000000002" y="185.0" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:240ms">/{=]1;[0                      :}+/{=]1                </text>
+<text x="49.76000000000002" y="194.5" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:264ms">0:}+/{=]                      1;[0:}+/                </text>
+<text x="49.76000000000002" y="204.0" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:288ms">]1;[0:}+/{=]1;[0:}+/          /{=]1;[0                </text>
+<text x="49.76000000000002" y="213.5" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:312ms">+/{=]1;[0:}+/{=]1;[0          0:}+/{=]                </text>
+<text x="49.76000000000002" y="223.0" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:336ms">[0:}+/{=]1;[0:}+/{=]          ]1;[0:}+                </text>
+<text x="49.76000000000002" y="232.5" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:360ms">=]1;[0:}+/{=]1;[0:}+          +/{=]1;[                </text>
+<text x="49.76000000000002" y="242.0" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:384ms">}+/{=]1;                      [0:}+/{=                </text>
+<text x="49.76000000000002" y="251.5" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:408ms">;[0:}+/{                      =]1;[0:}                </text>
+<text x="49.76000000000002" y="261.0" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:432ms">{=]1;[0:                      }+/{=]1;                </text>
+<text x="49.76000000000002" y="270.5" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:456ms">:}+/{=]1                      ;[0:}+/{                </text>
+<text x="49.76000000000002" y="280.0" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:480ms">1;[0:}+/                      {=]1;[0:                </text>
+<text x="49.76000000000002" y="289.5" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:504ms">/{=]1;[0                      :}+/{=]1                </text>
+<text x="49.76000000000002" y="299.0" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:528ms">0:}+/{=]                      1;[0:}+/                </text>
+<text x="49.76000000000002" y="308.5" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:552ms">]1;[0:}+                      /{=]1;[0                </text>
+<text x="49.76000000000002" y="318.0" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:576ms">+/{=]1;[                      0:}+/{=]1;[0:}+/{=]1;[0:</text>
+<text x="49.76000000000002" y="327.5" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:600ms">[0:}+/{=                      ]1;[0:}+/{=]1;[0:}+/{=]1</text>
+<text x="49.76000000000002" y="337.0" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:624ms">=]1;[0:}                      +/{=]1;[0:}+/{=]1;[0:}+/</text>
+<text x="49.76000000000002" y="346.5" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:648ms">}+/{=]1;                      [0:}+/{=]1;[0:}+/{=]1;[0</text>
+<text x="49.76000000000002" y="356.0" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:672ms">;[0:}+/{                      =]1;[0:}+/{=]1;[0:}+/{=]</text>
+<text x="49.76000000000002" y="365.5" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:696ms">{=]1;[0:                      }+/{=]1;[0:}+/{=]1;[0:}+</text>
+<text x="49.76000000000002" y="375.0" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:720ms">:}+/{=]1                      ;[0:}+/{=]1;[0:}+/{=]1;[</text>
+<text x="49.76000000000002" y="384.5" font-size="10.2" fill="#e6edf3" class="ascii" xml:space="preserve" textLength="330.47999999999996" lengthAdjust="spacingAndGlyphs" style="animation-delay:744ms">1;[0:}+/                      {=]1;[0:}+/{=]1;[0:}+/{=</text>
+<text x="215.0" y="430" font-size="29" fill="#e6edf3" text-anchor="middle" font-weight="700">Fábio Luiz</text>
+<text x="215.0" y="460" font-size="15" fill="#9da7b3" text-anchor="middle">Desenvolvimento web e projetos</text>
+<text x="215.0" y="482" font-size="15" fill="#9da7b3" text-anchor="middle">acadêmicos</text>
+<text x="215.0" y="520" font-size="13" fill="#7ee787" text-anchor="middle">Brasília, Brasil</text>
+</svg>
