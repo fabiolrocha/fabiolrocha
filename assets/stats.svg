@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="430" height="560" viewBox="0 0 430 560" role="img" aria-labelledby="title desc">
 <title id="title">Estatísticas de fabiolrocha</title>
-<desc id="desc">766 contribuições; 126 dias ativos; sequência atual de 3 dias; maior sequência de 13 dias no período.</desc>
+<desc id="desc">801 contribuições; 126 dias ativos; sequência atual de 4 dias; maior sequência de 13 dias no período.</desc>
 <style>
 text { font-family: 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace; }
 :root {
@@ -50,7 +50,7 @@ text { font-family: 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monosp
 <rect class="terminal-cursor" x="408" y="12" width="5" height="10" rx="1" fill="var(--accent, #7ee787)"/>
 <rect x="18.0" y="52" width="192.0" height="86" rx="6" fill="var(--panel, #161b22)" stroke="var(--tile-border, #252c35)"/>
 <text x="30.0" y="74" font-size="14" fill="var(--muted, #9da7b3)" >sequência atual</text>
-<text x="30.0" y="108" font-size="32" fill="var(--accent, #7ee787)" class="metric-value" font-weight="700" style="animation-delay:-0ms">3</text>
+<text x="30.0" y="108" font-size="32" fill="var(--accent, #7ee787)" class="metric-value" font-weight="700" style="animation-delay:-0ms">4</text>
 <text x="30.0" y="126" font-size="12" fill="var(--muted, #9da7b3)" >dias seguidos</text>
 <rect x="220.0" y="52" width="192.0" height="86" rx="6" fill="var(--panel, #161b22)" stroke="var(--tile-border, #252c35)"/>
 <text x="232.0" y="74" font-size="14" fill="var(--muted, #9da7b3)" >maior sequência</text>
@@ -58,7 +58,7 @@ text { font-family: 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monosp
 <text x="232.0" y="126" font-size="12" fill="var(--muted, #9da7b3)" >dias no período</text>
 <rect x="18.0" y="148" width="192.0" height="86" rx="6" fill="var(--panel, #161b22)" stroke="var(--tile-border, #252c35)"/>
 <text x="30.0" y="170" font-size="14" fill="var(--muted, #9da7b3)" >contribuições</text>
-<text x="30.0" y="204" font-size="32" fill="var(--text, #e6edf3)" class="metric-value" font-weight="700" style="animation-delay:-800ms">766</text>
+<text x="30.0" y="204" font-size="32" fill="var(--text, #e6edf3)" class="metric-value" font-weight="700" style="animation-delay:-800ms">801</text>
 <text x="30.0" y="222" font-size="12" fill="var(--muted, #9da7b3)" >últimos 365 dias</text>
 <rect x="220.0" y="148" width="192.0" height="86" rx="6" fill="var(--panel, #161b22)" stroke="var(--tile-border, #252c35)"/>
 <text x="232.0" y="170" font-size="14" fill="var(--muted, #9da7b3)" >dias ativos</text>
@@ -70,13 +70,13 @@ text { font-family: 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monosp
 <text x="30.0" y="318" font-size="12" fill="var(--muted, #9da7b3)" >07/10/2026</text>
 <rect x="220.0" y="244" width="192.0" height="86" rx="6" fill="var(--panel, #161b22)" stroke="var(--tile-border, #252c35)"/>
 <text x="232.0" y="266" font-size="14" fill="var(--muted, #9da7b3)" >média / dia ativo</text>
-<text x="232.0" y="300" font-size="32" fill="var(--text, #e6edf3)" class="metric-value" font-weight="700" style="animation-delay:-2000ms">6,1</text>
+<text x="232.0" y="300" font-size="32" fill="var(--text, #e6edf3)" class="metric-value" font-weight="700" style="animation-delay:-2000ms">6,4</text>
 <text x="232.0" y="318" font-size="12" fill="var(--muted, #9da7b3)" >contribuições</text>
 <rect x="18" y="344" width="394" height="160" rx="6" fill="var(--panel, #161b22)" stroke="var(--tile-border, #252c35)"/>
 <text x="30" y="367" font-size="12" fill="var(--muted, #9da7b3)" >contribuições / mês</text>
 <path d="M30 478H400" stroke="var(--border, #30363d)"/>
-<rect class="month" x="30.00" y="465.71" width="20.46" height="12.29" rx="2" fill="var(--bar, #3e9654)">
-<title>2025-10: 26 contribuições</title>
+<rect class="month" x="30.00" y="467.60" width="20.46" height="10.40" rx="2" fill="var(--bar, #3e9654)">
+<title>2025-10: 22 contribuições</title>
 </rect>
 <text x="40.23" y="495" font-size="9" fill="var(--muted, #9da7b3)" text-anchor="middle">out</text>
 <text x="68.69" y="495" font-size="9" fill="var(--muted, #9da7b3)" text-anchor="middle">nov</text>
@@ -121,10 +121,10 @@ text { font-family: 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monosp
 <title>2026-09: 117 contribuições</title>
 </rect>
 <text x="353.31" y="495" font-size="9" fill="var(--muted, #9da7b3)" text-anchor="middle">set</text>
-<rect class="month" x="371.54" y="435.95" width="20.46" height="42.05" rx="2" fill="var(--bar, #3e9654)">
-<title>2026-10: 89 contribuições</title>
+<rect class="month" x="371.54" y="417.52" width="20.46" height="60.48" rx="2" fill="var(--bar, #3e9654)">
+<title>2026-10: 128 contribuições</title>
 </rect>
 <text x="381.77" y="495" font-size="9" fill="var(--muted, #9da7b3)" text-anchor="middle">out</text>
 <text x="18" y="527" font-size="11" fill="var(--muted, #9da7b3)" >15 repositórios públicos</text>
-<text x="18" y="546" font-size="10" fill="var(--muted, #9da7b3)" >atualizado em 09/10/2026</text>
+<text x="18" y="546" font-size="10" fill="var(--muted, #9da7b3)" >atualizado em 10/10/2026</text>
 </svg>
