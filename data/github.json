@@ -1,16 +1,11 @@
 {
   "username": "fabiolrocha",
-  "as_of": "2026-10-12",
+  "as_of": "2026-10-13",
   "timezone": "UTC",
-  "from": "2025-10-13",
-  "to": "2026-10-12",
+  "from": "2025-10-14",
+  "to": "2026-10-13",
   "public_repositories": 15,
   "days": [
-    {
-      "date": "2025-10-13",
-      "count": 2,
-      "level": 1
-    },
     {
       "date": "2025-10-14",
       "count": 1,
@@ -1818,16 +1813,21 @@
     },
     {
       "date": "2026-10-10",
-      "count": 8,
-      "level": 1
+      "count": 21,
+      "level": 2
     },
     {
       "date": "2026-10-11",
-      "count": 0,
-      "level": 0
+      "count": 16,
+      "level": 2
     },
     {
       "date": "2026-10-12",
+      "count": 13,
+      "level": 2
+    },
+    {
+      "date": "2026-10-13",
       "count": 0,
       "level": 0
     }
