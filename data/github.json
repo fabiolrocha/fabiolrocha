@@ -1,16 +1,11 @@
 {
   "username": "fabiolrocha",
-  "as_of": "2026-10-23",
+  "as_of": "2026-10-24",
   "timezone": "UTC",
-  "from": "2025-10-24",
-  "to": "2026-10-23",
+  "from": "2025-10-25",
+  "to": "2026-10-24",
   "public_repositories": 15,
   "days": [
-    {
-      "date": "2025-10-24",
-      "count": 1,
-      "level": 1
-    },
     {
       "date": "2025-10-25",
       "count": 0,
@@ -1828,6 +1823,11 @@
     },
     {
       "date": "2026-10-23",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-10-24",
       "count": 0,
       "level": 0
     }
