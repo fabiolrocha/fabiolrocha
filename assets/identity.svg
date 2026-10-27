@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="860" height="560" viewBox="0 0 860 560" role="img" aria-labelledby="title desc">
 <title id="title">Fábio Luiz — identidade e atividade</title>
-<desc id="desc">Logo FL em um losango escuro, com faixa verde ascendente. Fábio Luiz, Brasília, Brasil. Desenvolvedor Full-stack. 915 contribuições em 365 dias; 126 dias ativos; maior sequência de 13 dias.</desc>
+<desc id="desc">Logo FL em um losango escuro, com faixa verde ascendente. Fábio Luiz, Brasília, Brasil. Desenvolvedor Full-stack. 914 contribuições em 365 dias; 125 dias ativos; maior sequência de 13 dias.</desc>
 <style>
 text { font-family: 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace; }
 :root {
@@ -104,11 +104,11 @@ text { font-family: 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monosp
 <text x="227.0" y="126" font-size="12" fill="var(--muted, #9da7b3)" >dias no período</text>
 <rect x="18.0" y="148" width="187.0" height="86" rx="6" fill="var(--panel, #161b22)" stroke="var(--tile-border, #252c35)"/>
 <text x="30.0" y="170" font-size="14" fill="var(--muted, #9da7b3)" >contribuições</text>
-<text x="30.0" y="204" font-size="32" fill="var(--text, #e6edf3)" class="metric-value" font-weight="700" style="animation-delay:-800ms">915</text>
+<text x="30.0" y="204" font-size="32" fill="var(--text, #e6edf3)" class="metric-value" font-weight="700" style="animation-delay:-800ms">914</text>
 <text x="30.0" y="222" font-size="12" fill="var(--muted, #9da7b3)" >últimos 365 dias</text>
 <rect x="215.0" y="148" width="187.0" height="86" rx="6" fill="var(--panel, #161b22)" stroke="var(--tile-border, #252c35)"/>
 <text x="227.0" y="170" font-size="14" fill="var(--muted, #9da7b3)" >dias ativos</text>
-<text x="227.0" y="204" font-size="32" fill="var(--text, #e6edf3)" class="metric-value" font-weight="700" style="animation-delay:-1200ms">126</text>
+<text x="227.0" y="204" font-size="32" fill="var(--text, #e6edf3)" class="metric-value" font-weight="700" style="animation-delay:-1200ms">125</text>
 <text x="227.0" y="222" font-size="12" fill="var(--muted, #9da7b3)" >de 365 dias</text>
 <rect x="18.0" y="244" width="187.0" height="86" rx="6" fill="var(--panel, #161b22)" stroke="var(--tile-border, #252c35)"/>
 <text x="30.0" y="266" font-size="14" fill="var(--muted, #9da7b3)" >melhor dia</text>
@@ -121,8 +121,8 @@ text { font-family: 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monosp
 <rect x="18" y="344" width="384" height="160" rx="6" fill="var(--panel, #161b22)" stroke="var(--tile-border, #252c35)"/>
 <text x="30" y="367" font-size="12" fill="var(--muted, #9da7b3)" >contribuições / mês</text>
 <path d="M30 478H390" stroke="var(--border, #30363d)"/>
-<rect class="month" x="30.00" y="475.59" width="19.69" height="2.41" rx="2" fill="var(--bar, #3e9654)">
-<title>2025-10: 7 contribuições</title>
+<rect class="month" x="30.00" y="476.63" width="19.69" height="1.37" rx="2" fill="var(--bar, #3e9654)">
+<title>2025-10: 4 contribuições</title>
 </rect>
 <text x="39.85" y="495" font-size="9" fill="var(--muted, #9da7b3)" text-anchor="middle">out</text>
 <text x="67.54" y="495" font-size="9" fill="var(--muted, #9da7b3)" text-anchor="middle">nov</text>
@@ -130,48 +130,48 @@ text { font-family: 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monosp
 <title>2025-12: 1 contribuições</title>
 </rect>
 <text x="95.23" y="495" font-size="9" fill="var(--muted, #9da7b3)" text-anchor="middle">dez</text>
-<rect class="month" x="113.08" y="471.46" width="19.69" height="6.54" rx="2" fill="var(--bar, #3e9654)">
+<rect class="month" x="113.08" y="471.52" width="19.69" height="6.48" rx="2" fill="var(--bar, #3e9654)">
 <title>2026-01: 19 contribuições</title>
 </rect>
 <text x="122.92" y="495" font-size="9" fill="var(--muted, #9da7b3)" text-anchor="middle">jan</text>
-<rect class="month" x="140.77" y="473.87" width="19.69" height="4.13" rx="2" fill="var(--bar, #3e9654)">
+<rect class="month" x="140.77" y="473.90" width="19.69" height="4.10" rx="2" fill="var(--bar, #3e9654)">
 <title>2026-02: 12 contribuições</title>
 </rect>
 <text x="150.62" y="495" font-size="9" fill="var(--muted, #9da7b3)" text-anchor="middle">fev</text>
-<rect class="month" x="168.46" y="425.37" width="19.69" height="52.63" rx="2" fill="var(--bar, #3e9654)">
+<rect class="month" x="168.46" y="425.79" width="19.69" height="52.21" rx="2" fill="var(--bar, #3e9654)">
 <title>2026-03: 153 contribuições</title>
 </rect>
 <text x="178.31" y="495" font-size="9" fill="var(--muted, #9da7b3)" text-anchor="middle">mar</text>
-<rect class="month" x="196.15" y="459.08" width="19.69" height="18.92" rx="2" fill="var(--bar, #3e9654)">
+<rect class="month" x="196.15" y="459.23" width="19.69" height="18.77" rx="2" fill="var(--bar, #3e9654)">
 <title>2026-04: 55 contribuições</title>
 </rect>
 <text x="206.0" y="495" font-size="9" fill="var(--muted, #9da7b3)" text-anchor="middle">abr</text>
-<rect class="month" x="223.85" y="468.71" width="19.69" height="9.29" rx="2" fill="var(--bar, #3e9654)">
+<rect class="month" x="223.85" y="468.79" width="19.69" height="9.21" rx="2" fill="var(--bar, #3e9654)">
 <title>2026-05: 27 contribuições</title>
 </rect>
 <text x="233.69" y="495" font-size="9" fill="var(--muted, #9da7b3)" text-anchor="middle">mai</text>
-<rect class="month" x="251.54" y="468.37" width="19.69" height="9.63" rx="2" fill="var(--bar, #3e9654)">
+<rect class="month" x="251.54" y="468.44" width="19.69" height="9.56" rx="2" fill="var(--bar, #3e9654)">
 <title>2026-06: 28 contribuições</title>
 </rect>
 <text x="261.38" y="495" font-size="9" fill="var(--muted, #9da7b3)" text-anchor="middle">jun</text>
-<rect class="month" x="279.23" y="458.39" width="19.69" height="19.61" rx="2" fill="var(--bar, #3e9654)">
+<rect class="month" x="279.23" y="458.55" width="19.69" height="19.45" rx="2" fill="var(--bar, #3e9654)">
 <title>2026-07: 57 contribuições</title>
 </rect>
 <text x="289.08" y="495" font-size="9" fill="var(--muted, #9da7b3)" text-anchor="middle">jul</text>
-<rect class="month" x="306.92" y="415.39" width="19.69" height="62.61" rx="2" fill="var(--bar, #3e9654)">
+<rect class="month" x="306.92" y="415.89" width="19.69" height="62.11" rx="2" fill="var(--bar, #3e9654)">
 <title>2026-08: 182 contribuições</title>
 </rect>
 <text x="316.77" y="495" font-size="9" fill="var(--muted, #9da7b3)" text-anchor="middle">ago</text>
-<rect class="month" x="334.62" y="435.34" width="19.69" height="42.66" rx="2" fill="var(--bar, #3e9654)">
+<rect class="month" x="334.62" y="435.68" width="19.69" height="42.32" rx="2" fill="var(--bar, #3e9654)">
 <title>2026-09: 124 contribuições</title>
 </rect>
 <text x="344.46" y="495" font-size="9" fill="var(--muted, #9da7b3)" text-anchor="middle">set</text>
 <rect class="month" x="362.31" y="392.00" width="19.69" height="86.00" rx="2" fill="var(--accent, #7ee787)">
-<title>2026-10: 250 contribuições</title>
+<title>2026-10: 252 contribuições</title>
 </rect>
-<text x="372.15" y="386.0" font-size="10" fill="var(--text, #e6edf3)" text-anchor="middle">250</text>
+<text x="372.15" y="386.0" font-size="10" fill="var(--text, #e6edf3)" text-anchor="middle">252</text>
 <text x="372.15" y="495" font-size="9" fill="var(--muted, #9da7b3)" text-anchor="middle">out</text>
 <text x="18" y="527" font-size="11" fill="var(--muted, #9da7b3)" >15 repositórios públicos</text>
-<text x="18" y="546" font-size="10" fill="var(--muted, #9da7b3)" >atualizado em 26/10/2026</text>
+<text x="18" y="546" font-size="10" fill="var(--muted, #9da7b3)" >atualizado em 27/10/2026</text>
 </g>
 </svg>
